@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{background-color: antiquewhite;}
+    h1{text-align: center;}
+</style>
+<h1>Cadastro de agendamentos</h1>
+
+<body>
+<form>
+    <fieldset id="cliente"> <legend>Dados do Cliente</legend></fieldset>
+    <p>NOME <input type="text"name="tname"id="cnome" size="20" maxlength="30" placeholder="
+        NOME DO CLIENTE"></p>
+    <p>ENDEREÇO <input type="text"name="tend"id="cend" size="20" maxlength="30" placeholder="ENDEREÇO DO CLIENTE"></p>
+        <p>NÚMERO <input type="number" name="tnumero" id="cnumero" min="0" max="9999" placeholder="nº"</p>
+    <P>BAIRRO <input type="text"name="tbairro"id="cbairro" size="20" maxlength="30" placeholder="Bairro"</P>
+    <p>MUNICIPIO <input type="text"name="tmunicipio"id="cmunicipio" size="20" maxlength="30" placeholder="MUNICIPIO"</p>
+    <P>TELEFONE <input type="number"name="ttel"id="ctel" size="20" maxlength="
+        30" placeholder="TELEFONE DO CLIENTE">
+     </P>
+     <fieldset id="serviço"><legend > Dados do Serviço Solicitado</legend></fieldset>
+     <P>O.S <input type="number"name="tos"id="cos" size="20" maxlength="30" placeholder="Número da OS"</P>
+     <p>Serviço<input type="text"name="tserviço"id="cserviço" size="20" maxlength="30" placeholder="SERVIÇO SOLICITADO"</p> <br> <br>
+     <label> MOTIVO DA NÃO EXECUÇÃO :</label> <br>
+     <textarea rows="6" style ="width: 26em;"></textarea>
+     <fieldset id="Agendamento"> <legend>Dados do Agendamento</legend></fieldset>
+     <p>Data agendada <input type="date" name="tdata" id="cdata" size="20" maxlength="30" placeholder="Data Agendada"></p>
+     <fieldset id="PERIODO AGENDADO"><legend> Periodo Agendado</legend></fieldset>
+     <input type="radio" name="tperiodo" id="cmanhã" checked/> <label for="cmanhã">MANHÃ</label> <br>
+     <input type="radio" name="tperiodo" id="ctarde" checked/> <label for="ctarde">TARDE</label>
+     <input type="button" name="botao-ok" value="salvar">
+     
+</form>   
+</body>
+</html>
